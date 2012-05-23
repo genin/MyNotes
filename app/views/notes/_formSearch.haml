@@ -1,0 +1,6 @@
+= form_tag(search_notes_path, :method => "get") do
+  .field
+    = text_field_tag :searchword, @searchword
+  .actions
+    = submit_tag "Search"
+

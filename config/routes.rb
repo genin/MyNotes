@@ -1,7 +1,13 @@
 MyNotes::Application.routes.draw do
-  resources :notes
+  resources :notes do 
+    collection do
+      get "search"
+    end
+  end
 
   root :to => "Notes#index"
+
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

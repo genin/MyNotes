@@ -56,3 +56,5 @@ group :development do
   gem "haml-rails"
 end
 
+gem 'simple_form'
+

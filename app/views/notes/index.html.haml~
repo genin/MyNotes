@@ -1,8 +1,5 @@
 %h1 Listing notes
 
-%div
-  = render 'formSearch'
-
 %table
   %tr
     %th User

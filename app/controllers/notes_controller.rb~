@@ -83,7 +83,6 @@ class NotesController < ApplicationController
 
   # SEARCH strict
   def search 
-    @searchword = params[:searchword]
     @notes=Note.where(:content => params[:searchword])
     render :index
   end 

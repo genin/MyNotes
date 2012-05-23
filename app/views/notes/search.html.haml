@@ -1,0 +1,16 @@
+%h1 Search Results
+
+%table
+  %tr
+    %th User
+    %th Content
+    %th
+
+  - @notes.each do |note|
+    %tr
+      %td= note.user
+      %td= note.content
+      %td= link_to 'Show', note
+
+%br
+
