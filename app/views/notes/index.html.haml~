@@ -3,7 +3,7 @@
 %div
   = render 'formSearch'
 
-%table
+%table#notes
   %tr
     %th User
     %th Content
@@ -21,4 +21,6 @@
 
 %br
 
+-#= will_paginate @notes
+= link_to "more", "javascript:", {:id => "more_notes", :class => "btn"}
 = link_to 'New Note', new_note_path

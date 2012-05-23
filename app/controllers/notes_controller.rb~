@@ -6,7 +6,7 @@ class NotesController < ApplicationController
     #@notes = Note.all
     
     #second implementation with pagination
-    @notes = Note.paginate : page =>params[:page]
+    @notes = Note.paginate :page =>params[:page]
 
     respond_to do |format|
       format.html # index.html.erb

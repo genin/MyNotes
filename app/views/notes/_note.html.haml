@@ -1,0 +1,7 @@
+%tr
+  %td= link_to note.user, note
+  %td= link_to note.content, note
+  %td= link_to 'Show', note_path(note)
+  %td= link_to 'Edit', edit_note_path(note)
+  %td= link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete
+

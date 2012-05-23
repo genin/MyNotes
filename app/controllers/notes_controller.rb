@@ -9,7 +9,7 @@ class NotesController < ApplicationController
     @notes = Note.paginate :page =>params[:page]
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html {request.xhr? ? render(@notes, :layout => false) : render(:index)} # index.html.erb
       format.json { render json: @notes }
     end
   end
