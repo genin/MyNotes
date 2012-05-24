@@ -11,7 +11,9 @@ class NotesController < ApplicationController
     respond_to do |format|
       format.html {request.xhr? ? render(@notes, :layout => false) : render(:index)} # index.html.erb
       format.json { render json: @notes }
+      format.xml { render xml: @notes }
     end
+
   end
 
   # GET /notes/1
