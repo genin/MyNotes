@@ -1,5 +1,5 @@
 class Note < ActiveRecord::Base
-  attr_accessible :content, :user
+  attr_accessible :content, :user_id
   validates_presence_of :content
   belongs_to :user
   self.per_page =2

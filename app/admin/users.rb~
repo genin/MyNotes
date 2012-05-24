@@ -1,0 +1,10 @@
+ActiveAdmin.register User do
+
+  filter :name
+  filter :email
+  filter :created_at
+  filter :updated_at
+
+
+  
+end
