@@ -1,7 +1,7 @@
 class Note < ActiveRecord::Base
   attr_accessible :content, :user
   validates_presence_of :content
-  has_one :user
+  belongs_to :user
   self.per_page =2
   
   def as_json(opts={})

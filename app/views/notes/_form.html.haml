@@ -16,6 +16,6 @@
 -#    = f.submit 'Save'
 
 = simple_form_for @note, :html => {:class => 'form-horizontal' } do |f|
-  = f.input :user
-  = f.input :content
+  -#  = f.input :user
+  = f.input :content, :input_html => { :class => "span8" }
   = f.button :submit

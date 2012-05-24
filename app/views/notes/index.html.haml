@@ -3,7 +3,7 @@
 %div
   = render 'formSearch'
 
-%table#notes
+%table#notes.table.table-bordered.table-striped
   %tr
     %th User
     %th Content
@@ -17,4 +17,4 @@
 
 -#= will_paginate @notes
 = link_to "more", "javascript:", {:id => "more_notes", :class => "btn"}
-= link_to 'New Note', new_note_path
+= link_to 'New Note', new_note_path, :class => "btn btn-primary"

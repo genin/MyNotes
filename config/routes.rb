@@ -1,4 +1,6 @@
 MyNotes::Application.routes.draw do
+  devise_for :users
+
   resources :notes do 
     collection do
       get "search"

@@ -3,21 +3,15 @@
 %div
   = render 'formSearch'
 
-%table#notes
+%table#notes.table.table-bordered.table-striped
   %tr
     %th User
     %th Content
     %th
     %th
     %th
+  = render @notes
 
-  - @notes.each do |note|
-    %tr
-      %td= note.user
-      %td= note.content
-      %td= link_to 'Show', note
-      %td= link_to 'Edit', edit_note_path(note)
-      %td= link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete
 
 %br
 
